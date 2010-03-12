@@ -1,0 +1,29 @@
+Congratulations on registering for the Startup Weekend Rails Bootcamp on Sunday, March 14th!
+
+We said we'd send you some info about what you would need to show up with on the day of the bootcamp.  This is that info.  
+
+You will need :
+
+
+1) Ruby 1.8.6 or 1.8.7 & Rails 2.3.5 installed on your machine.
+There are some pretty straightforward instructions and links here : http://rubyonrails.org/download
+
+
+2) At least a little knowledge of Ruby.  
+If you've used Ruby before, you're good here.  If not, please spend 20 minutes, and go through this tutorial : http://www.ruby-lang.org/en/documentation/quickstart/
+
+
+3) Git installed on your machine.
+On OSX, I recommend http://code.google.com/p/git-osx-installer/
+On Windows, I recommend http://code.google.com/p/msysgit/ and using all their default install options.
+
+
+Come with all those things, and you should be in good shape.
+
+
+One last thing, due to space limitations, there were only 12 seats available for this bootcamp.  You got one, so you better come!  In all seriousness, there is a pretty sizable waiting list, so please let us know if you won't be making it and we'll let someone else in.
+
+
+Thanks, and we're looking forward to having you here!
+
+- Jeremy & Wes

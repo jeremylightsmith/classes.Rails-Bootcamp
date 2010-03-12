@@ -1,0 +1,51 @@
+A lot of this comes from http://guides.rubyonrails.org/getting_started.html feel free to follow along there
+
+
+STORY 1-1
+I would like to CRUD (create, read, update, delete) posts
+
+- generate the app w/ "rails quotes"
+- start the server :
+    script/server
+- remove the /public/index.html
+- generate scaffold for posts :
+    script/generate scaffold Post name:string title:string content:text
+- create database
+    rake db:migrate
+- look at your application :
+    http://localhost:3000/posts
+
+
+STORY 1-2
+I would like to remove the duplication in the views new & edit
+
+- create a partial called app/views/posts/_form.html.erb, and put the common parts of new.html.erb & edit.html.erb there
+- replace them with a reference to the "partial"
+    <%= render :partial => "form" %>
+    
+
+STORY 1-3
+I would like to CRUD comments
+
+- generate the scaffold for comments :
+    script/generate scaffold Comment name:string content:text post:references
+- run migration
+    rake db:migrate
+
+
+Story 1-4
+I would like to create a comment and see the comments I've created from the post page
+
+- move the appropriate code from app/views/comments/index.html.erb to app/views/posts/index.html.erb
+- add to Post
+    has_many :comments
+- add the post_id to the new comment link
+- in comments_controller/new, build the comment from the post
+- remove the "post" part of tne new & edit views
+  - extract the form like in 1-2
+  - replace the post lines with a hidden tag
+- after saving, it should go back to the post path
+  - this should be true for all actions
+
+STORY 1-5
+Make it pretty

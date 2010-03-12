@@ -1,0 +1,12 @@
+STORY 2-1:
+I would like to see a quote displayed on the homepage.
+
+- generate the app w/ "rails quotes"
+- remove the /public/index.html
+- add a quotes controller
+- add an index view
+- hard code a quote
+
+
+STORY 2-2:
+I would like to see a quote
