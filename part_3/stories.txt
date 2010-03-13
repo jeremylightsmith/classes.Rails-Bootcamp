@@ -1,0 +1,34 @@
+Task List App
+
+STORY 3-1:
+I would like to CRUD my lists.
+
+* create the app
+* create a list "resource" (basically a scaffold but empty)
+    script/generate resource list
+* add a name column to the database migration that was created
+* support actions 
+    index
+    new
+    create
+    show
+    edit
+    update
+    destroy
+* create views for
+    index
+    new
+    show
+    edit
+* add a root route so http://localhost:3000/ => lists / index
+
+
+STORY 3-2:
+
+STORY 3-
+I would like to all lists to have names and for those names to be unique.
+
+* add validation to the list class
+    validates_uniqueness_of :name
+    validates_presence_of :name
+* in the controller, if create

@@ -1,12 +1,10 @@
 _ part 1
+  X slides
+  X stories
   X app
   _ pretty app
-  X stories
-  X slides
 
 _ part 2
-  X app
-  X stories
   _ slides
     _ git
       _ push pull metaphor
@@ -14,14 +12,17 @@ _ part 2
       _ commands you care about
     _ heroku
     _ routes
+  X stories
+  X app
   
 _ part 3
-  _ app
-  _ stories
   _ slides
     _ REST
+    
+  _ stories
+  _ app
 
 _ part 4
-  _ app
-  _ stories
   _ slides
+  _ stories
+  _ app

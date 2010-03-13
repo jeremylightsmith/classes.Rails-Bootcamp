@@ -1,5 +1,6 @@
-A lot of this comes from http://guides.rubyonrails.org/getting_started.html feel free to follow along there
+Blog App
 
+A lot of this comes from http://guides.rubyonrails.org/getting_started.html feel free to follow along there
 
 STORY 1-1
 I would like to CRUD (create, read, update, delete) posts
