@@ -1,27 +1,27 @@
-* part 1
-  * app - done?
-  * pretty app
-  * stories - done?
-  * slides - done?
+_ part 1
+  X app
+  _ pretty app
+  X stories
+  X slides
 
-* part 2
-  * app - done?
-  * stories - done?
-  * slides
-    * git
-      * push pull metaphor
-      * file lifecycle image
-      * commands you care about
-    * heroku
-    * routes
+_ part 2
+  X app
+  X stories
+  _ slides
+    _ git
+      _ push pull metaphor
+      _ file lifecycle image
+      _ commands you care about
+    _ heroku
+    _ routes
   
-* part 3
-  * app
-  * stories
-  * slides
-    * REST
+_ part 3
+  _ app
+  _ stories
+  _ slides
+    _ REST
 
-* part 4
-  * app
-  * stories
-  * slides
+_ part 4
+  _ app
+  _ stories
+  _ slides
