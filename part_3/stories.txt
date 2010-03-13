@@ -24,11 +24,45 @@ I would like to CRUD my lists.
 
 
 STORY 3-2:
+I would like to see all the tasks for a given list on the show page for that list.  I would also like to add a task to the list on that same page.
 
-STORY 3-
-I would like to all lists to have names and for those names to be unique.
+* create a task resource
+* add a name & list column to the database migration created
+* add create action to the task controller
+* add relationships to both the task & list
+    class Task
+      belongs_to :list
+      ...
+      
+    class List
+      has_many :tasks
+      ...
+
+* show tasks for a list on the list show view
+* add a form to create new tasks on the list show view
+
+
+STORY 3-3:
+I would like to be able to check off a task by clicking the checkbox next to it.
+
+* add a link next to each task with a checkbox in it, the link should go to DELETE /tasks/ID
+* implement tasks/destroy
+
+
+STORY 3-4:
+Deploy to Heroku.
+
+
+STORY 3-5:
+I would like all lists to have names and for those names to be unique.
 
 * add validation to the list class
     validates_uniqueness_of :name
     validates_presence_of :name
-* in the controller, if create
+* in the list controller's create action, check the value returned by save to know if there were any errors
+  * if there were no errors, then redirect
+  * if there were errors, then show the new page without redirecting
+* do the same in the list controller's edit action
+* show the errors in the view w/
+    <%= error_messages_for :list %>
+

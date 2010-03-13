@@ -13,16 +13,23 @@ class ListsController < ApplicationController
   end
   
   def create
-    @list = List.create!(params[:list])
-    redirect_to @list
+    @list = List.new(params[:list])
+    if @list.save
+      redirect_to @list
+    else
+      render :action => :new
+    end
   end
   
   def edit
   end
   
   def update
-    @list.update_attributes!(params[:list])
-    redirect_to @list
+    if @list.update_attributes(params[:list])
+      redirect_to @list
+    else
+      render :action => :edit
+    end
   end
   
   def destroy

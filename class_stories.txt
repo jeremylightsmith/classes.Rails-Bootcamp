@@ -18,11 +18,12 @@ _ part 2
 _ part 3
   _ slides
     _ REST
-    
-  _ stories
-  _ app
+  X stories
+  X app
 
 _ part 4
   _ slides
   _ stories
   _ app
+
+should the stories be in a google doc?  then we can edit on the fly as a wiki?
