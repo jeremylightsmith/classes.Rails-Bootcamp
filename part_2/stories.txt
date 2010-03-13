@@ -1,12 +1,48 @@
 STORY 2-1:
 I would like to see a quote displayed on the homepage.
 
-- generate the app w/ "rails quotes"
-- remove the /public/index.html
-- add a quotes controller
-- add an index view
-- hard code a quote
+- generate the app
+- add a quotes controller with an index view
+    script/generate controller quotes index
+- hard code a quote in the index view
+- you should be able to see it at http://localhost:3000/quotes
+- add a route to config/routes.rb
+    map.root :controller => 'quotes'
 
 
 STORY 2-2:
-I would like to see a quote
+I would like to see this quote on the cloud.  Deploy it to Heroku
+
+- create a git repo
+  - git init
+  - git add .
+  - git commit -m "initial checkin"
+- create a heroku project
+  - go to http://heroku.com/ and sign up for an account
+  - sudo gem install heroku
+  - heroku create <yourname>-quotes
+    - you'll have to enter your heroku credentials
+- push to heroku
+  - git push heroku master
+- you should see it now at : <yourname>-quotes.heroku.com
+
+
+STORY 2-3:
+I would like to be able to add more quotes, and display the last one added.
+
+- generate a quote model
+  - script/generate model quote content:text author:string
+- migrate the db
+- add a resource route
+    map.resources :quotes
+- add a new action / view
+- add a create action that redirects to the index_path
+- add a link to the new quote page
+
+
+STORY 2-4:
+Deploy that to heroku
+
+
+STORY 2-5:
+Instead of seeing the last quote, show a random quote
