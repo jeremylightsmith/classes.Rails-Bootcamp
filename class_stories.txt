@@ -1,23 +1,24 @@
 _ part 1
   X slides
+    X pass the stewie examples
+    _ naming conventions
   X stories
   X app
-  _ pretty app
 
-_ part 2
-  _ slides
-    _ git
-      _ push pull metaphor
-      _ file lifecycle image
-      _ commands you care about
-    _ heroku
-    _ routes
+X part 2
+  X slides
+    X git
+      X push pull metaphor (whiteboard)
+      X file lifecycle image
+      X commands you care about
+    X heroku
+    X routes
   X stories
   X app
   
-_ part 3
-  _ slides
-    _ REST
+X part 3
+  X slides
+    X REST
   X stories
   X app
 

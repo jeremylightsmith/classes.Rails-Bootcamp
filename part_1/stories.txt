@@ -32,21 +32,29 @@ I would like to CRUD comments
     script/generate scaffold Comment name:string content:text post:references
 - run migration
     rake db:migrate
+- you'll need to remove the post piece on the new & edit views
 
 
-Story 1-4
-I would like to create a comment and see the comments I've created from the post page
-
-- move the appropriate code from app/views/comments/index.html.erb to app/views/posts/index.html.erb
+STORY 1-4
+I would like to see the comments associated with a post on the post show page.
 - add to Post
     has_many :comments
+- make sure Comment has this code
+    belongs_to :post
+- move the appropriate code from app/views/comments/index.html.erb to app/views/posts/show.html.erb
+  - instead of @comments, list @post.comments
+
+
+Story 1-5
+I would like to create a comment attached to the post from the post page
+
 - add the post_id to the new comment link
 - in comments_controller/new, build the comment from the post
-- remove the "post" part of tne new & edit views
-  - extract the form like in 1-2
+- remove the "post" part of the new & edit views
   - replace the post lines with a hidden tag
 - after saving, it should go back to the post path
   - this should be true for all actions
 
-STORY 1-5
+
+STORY 1-6
 Make it pretty

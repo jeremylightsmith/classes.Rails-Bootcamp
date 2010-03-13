@@ -15,6 +15,11 @@ I would like to see a quote displayed on the homepage.
 STORY 2-2:
 I would like to see this quote on the cloud.  Deploy it to Heroku
 
+- add a .gitignore file to the application directory, it should have this in it :
+log
+*.sqlite3
+schema.rb
+
 - create a git repo
   - git init
   - git add .
@@ -45,6 +50,10 @@ I would like to be able to add more quotes, and display the last one added.
 STORY 2-4:
 Deploy that to heroku
 
+- commit what you just worked on
+- push to heroku
+- run migrations on heroku
+    heroku rake db:migrate
 
 STORY 2-5:
 Instead of seeing the last quote, show a random quote

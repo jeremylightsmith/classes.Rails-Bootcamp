@@ -1,35 +1,31 @@
 Task List App
 
-STORY 3-1:
-I would like to CRUD my lists.
+STORY 3-1
+I would like to create a list, see all the current lists, and see one list.
 
-* create the app
-* create a list "resource" (basically a scaffold but empty)
+- create the app
+- create a list "resource" (basically a scaffold but empty)
     script/generate resource list
-* add a name column to the database migration that was created
-* support actions 
+- add a name column to the database migration that was created
+- support actions 
     index
     new
     create
     show
-    edit
-    update
-    destroy
-* create views for
+- create views for
     index
     new
     show
-    edit
-* add a root route so http://localhost:3000/ => lists / index
+- add a root route so http://localhost:3000/ => lists / index
 
 
-STORY 3-2:
+STORY 3-2
 I would like to see all the tasks for a given list on the show page for that list.  I would also like to add a task to the list on that same page.
 
-* create a task resource
-* add a name & list column to the database migration created
-* add create action to the task controller
-* add relationships to both the task & list
+- create a task resource 
+- add a name & list column to the database migration created
+- add create action to the task controller
+- add relationships to both the task & list
     class Task
       belongs_to :list
       ...
@@ -38,31 +34,36 @@ I would like to see all the tasks for a given list on the show page for that lis
       has_many :tasks
       ...
 
-* show tasks for a list on the list show view
-* add a form to create new tasks on the list show view
+- show tasks for a list on the list show view
+- add a form to create new tasks on the list show view
 
 
-STORY 3-3:
-I would like to be able to check off a task by clicking the checkbox next to it.
-
-* add a link next to each task with a checkbox in it, the link should go to DELETE /tasks/ID
-* implement tasks/destroy
-
-
-STORY 3-4:
+STORY 3-3
 Deploy to Heroku.
 
 
-STORY 3-5:
+STORY 3-4
+I would like to be able to check off a task by clicking the checkbox next to it.
+
+- add a link next to each task with a checkbox in it, the link should go to DELETE /tasks/ID
+- implement tasks/destroy
+
+
+STORY 3-5
+Deploy to Heroku.
+
+---
+
+STORY 3-6
 I would like all lists to have names and for those names to be unique.
 
-* add validation to the list class
+- add validation to the list class
     validates_uniqueness_of :name
     validates_presence_of :name
-* in the list controller's create action, check the value returned by save to know if there were any errors
-  * if there were no errors, then redirect
-  * if there were errors, then show the new page without redirecting
-* do the same in the list controller's edit action
-* show the errors in the view w/
+- in the list controller's create action, check the value returned by save to know if there were any errors
+  - if there were no errors, then redirect
+  - if there were errors, then show the new page without redirecting
+- do the same in the list controller's edit action
+- show the errors in the view w/
     <%= error_messages_for :list %>
 
