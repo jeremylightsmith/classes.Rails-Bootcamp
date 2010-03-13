@@ -6,6 +6,7 @@ class ArtistsController < ApplicationController
   end
   
   def show
+    @albums = @artist.albums.paginate(:page => params[:page], :per_page => 6, :order => "name")
   end
   
   def new
