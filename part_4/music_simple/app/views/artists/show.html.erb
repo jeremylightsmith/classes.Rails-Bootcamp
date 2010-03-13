@@ -1,0 +1,11 @@
+<h1><%= @artist.name %></h1>
+
+<% @artist.albums.each do |album| %>
+  <div>
+    <%= link_to album.name, artist_album_path(@artist, album) %>
+  </div>
+<% end %>
+
+<p><%= link_to "New Album", new_artist_album_path(@artist) %></p>
+
+<p><%= link_to "All Artists", artists_path %></p>

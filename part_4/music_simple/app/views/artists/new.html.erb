@@ -1,0 +1,17 @@
+<h1>New Artist</h1>
+
+<% form_for @artist do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  
+  <p>
+    <%= f.label :genre %>
+    <%= f.select :genre, %w(Alternative Classical Dance Jazz R&B Rock) %>
+  </p>
+  
+  <p>
+    <%= f.submit "Create", :disable_with => 'Creating...' %>
+  </p>
+<% end %>

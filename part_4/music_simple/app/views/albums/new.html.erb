@@ -1,0 +1,16 @@
+<h1>New Album</h1>
+
+<% form_for [@artist, @album] do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :release_date %>
+    <%= f.date_select :release_date %>
+  </p>
+  
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
