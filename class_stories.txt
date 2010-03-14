@@ -22,9 +22,9 @@ X part 3
   X stories
   X app
 
-_ part 4
-  _ slides
-  _ stories
-  _ app
+X part 4
+  X slides
+  X stories
+  X app
 
 should the stories be in a google doc?  then we can edit on the fly as a wiki?
