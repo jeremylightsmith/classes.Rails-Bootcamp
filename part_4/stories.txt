@@ -41,6 +41,7 @@ STORY 6-3
 Show "breadcrumbs" at top left of screen, along with artist name.  Then show big (450px wide) picture of artist on right side of screen.
 The screen should be a fixed width, and should use the same layout for the fixed width that the album uses.
 
+- use CSS to resize the images
 
 STORY 6-4
 Show all the albums associated with the artist below the artist in a black section.  It should be titled, "Albums".  Show 3 across, each with a small (75px wide) image.  They should go 3 across and then wrap.

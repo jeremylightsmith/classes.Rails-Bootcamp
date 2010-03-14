@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: arial;
+}
+.content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.artist {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.artist .info {
+  background-color: #ABABAB;
+  padding: 1em 0 0 1em;
+  color: #474654;
+}
+
+.artist .info a {
+  color: #474654;
+}
+
+.artist p, .artist h1 {
+}
+
+.artist .info img {
+  float: right;
+  width: 550px;
+  margin-top: -1em;
+}
+
+.artist .albums {
+  color: white;
+  padding: 0 1em;
+  position: relative;
+}
+
+.artist .albums,
+.artist .albums a {
+  color: #888;
+}
+
+.artist .albums .pagination {
+  position: absolute;
+  top: 8px;
+  left: 120px;
+}
+
+.artist .albums .sort {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+
+.artist .album {
+  width: 32%;
+  height: 120px;
+  float: left;
+}
+
+.artist .album h3,
+.artist .album p {
+  margin: 0 0 3px;
+  font-size: 16px;
+}
+
+.artist .album img {
+  height: 75px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.artist .album h3 a {
+  font-weight: normal;
+}
+
+.artist .albums .pagination,
+.artist .albums .pagination a,
+.artist .album h3 a {
+  color: silver;
+}

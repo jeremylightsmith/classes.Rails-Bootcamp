@@ -1,0 +1,4 @@
+log
+*.sqlite3
+schema.rb
+public/system

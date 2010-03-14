@@ -1,0 +1,34 @@
+<div class="artist">
+  <div class="info">
+    <%= image_tag @artist.photo.url %>
+    <div class="breadcrumbs">
+      <%= link_to "All", artists_path %> >
+      <%= link_to @artist.genre %> >
+      <%= link_to @artist.name, @artist %>
+    </div>
+    <h1><%= @artist.name %></h1>
+    <p><%= link_to "edit", edit_artist_path(@artist) %></p>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="albums">
+    <% form_tag '', :method => :get, :class => "sort" do %>
+      <%= select_tag "order", 
+                     options_for_select([["Name", "name"], ["Release Date", "release_date desc"]], 
+                                        params[:order]) %>
+      <%= submit_tag "Sort" %>
+    <% end %>
+    <h2>Albums</h2>
+    <%= will_paginate @albums %>
+    <% @albums.each do |album| %>
+      <div class="album">
+        <%= image_tag album.photo.url %>
+        <h3><%= link_to album.name, artist_album_path(@artist, album) %></h3>
+        <p><%= link_to @artist.name, @artist %></p>
+        <p><%= album.release_date.to_s() %></p>
+      </div>
+    <% end %>
+    <div class="clearfix"></div>
+    <p><%= link_to "New Album", new_artist_album_path(@artist) %></p>
+  </div>
+</div>
