@@ -6,7 +6,7 @@ IMPORTANT : Start with music_simple rails app in music simple
 to setup the database & generate data for the project, run
   rake db:migrate db:seed
 
-STORY 6-1
+STORY 4-1
 I would like to upload artist & album images that are then displayed
 
 We're going to use the paperclip gem (http://github.com/thoughtbot/paperclip)
@@ -23,7 +23,7 @@ Normally we would use paperclip to not just upload, but resize, but this involve
     (remove the styles part or you will need to install imagemagick)
 
 
-STORY 6-2
+STORY 4-2
 I would like to see the albums on the artist page paginated, 6 to a page.
 
 We're going to use the will_paginate gem (http://wiki.github.com/mislav/will_paginate/)
@@ -37,17 +37,17 @@ We're going to use the will_paginate gem (http://wiki.github.com/mislav/will_pag
 
 ========================================================================================
 Let's make it look like the mock up "artist_page_mockup.jpg"
-STORY 6-3
+STORY 4-3
 Show "breadcrumbs" at top left of screen, along with artist name.  Then show big (450px wide) picture of artist on right side of screen.
 The screen should be a fixed width, and should use the same layout for the fixed width that the album uses.
 
 - use CSS to resize the images
 
-STORY 6-4
+STORY 4-4
 Show all the albums associated with the artist below the artist in a black section.  It should be titled, "Albums".  Show 3 across, each with a small (75px wide) image.  They should go 3 across and then wrap.
 
 
-STORY 6-5
+STORY 4-5
 Allow the user to sort the albums associated with the artist (by name or release date).  Use a form with a drop down to achieve this.
 
 
@@ -56,7 +56,7 @@ Allow the user to sort the albums associated with the artist (by name or release
 At home:
 If you plan on working with rails at startup weekend, you'll want to make sure you can get these up and running.  They will take more setup than you'll have time for here, but you'll almost certainly need to do this at startup weekend.
 
-STORY 6-6
+STORY 4-6
 I would like the images actually resized to a large size of 200x200 & a small size of 75x75 for both artist & albums.  Please crop the images if they are the wrong aspect ratio.
 
 - install image magic (good luck with this, it could take 1/2 an hour and a couple tries)
@@ -65,14 +65,14 @@ I would like the images actually resized to a large size of 200x200 & a small si
 - on the artist page, use the large size of the artist photo and the small size for the albums
 - on the albums page, use the large size for the album photo
 
-STORY 6-7
+STORY 4-7
 Deploy to Heroku
 
 - You'll need to tell heroku about the paperclip gem.  Create a file called .gems in the application root directory, and put this in it.
 - follow the directions here
     http://docs.heroku.com/s3
 
-STORY 6-8
+STORY 4-8
 I would like to require a user to login / out of my application to see the artist page.
 
 For this story, you'll want to install a plugin.  I recommend authlogic, though there are many other choices that are equally good.
