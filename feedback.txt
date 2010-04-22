@@ -1,0 +1,44 @@
+== Keep ==
+- Pass the stewie
+- ABC "Always be cheating"
+- Stories
+- 4 projects
+
+
+== Work on ==
+- handouts
+  - cheatsheet
+    - naming conventions
+    - command line
+  - visual flowchart 
+    - echoes pass the stewie
+      - Overview of the request from browser, through routing, controller,  model, view using pictures.
+    - what you don't see happening...
+  - Hand out of books that are recommend, tutorials, etc.
+
+- prereq's
+  - couple years dev
+- tell people
+  - "this isn't going to make sense for the first hour or 2 or 3.  That's okay."
+- get rails background b4
+- better machine setup
+  - script for verifying things are in order
+  - rails version specified
+  - gem versions specified
+- content
+  - what models are / do
+  - what controllers are / do
+  - how views interact w/ both
+  - more complete example w/ logic in models
+    - "full name" example - User.first_name User.last_name -> User.display_name etc.
+
+** Slides on the pieces and some helpful/useful info.  "model live
+here... they do this... they have these methods, has_many, etc." for
+mvc and routes.
+** routes, show rake routes output
+** parameters, where/how are they built?  routes extracts info, show
+how the log contains the request info/parameters.
+
+- Make the directions have a bit more detail.  Several times people
+asked "What is Post here"... if it said "Update the Post model to..."
+they would've got it.

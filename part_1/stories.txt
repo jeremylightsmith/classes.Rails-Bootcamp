@@ -5,7 +5,7 @@ A lot of this comes from http://guides.rubyonrails.org/getting_started.html feel
 STORY 1-1
 I would like to CRUD (create, read, update, delete) posts
 
-- generate the app w/ "rails quotes"
+- generate the app w/ "rails blog"
 - start the server :
     script/server
 - remove the /public/index.html
