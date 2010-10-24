@@ -18,12 +18,10 @@ I would like to CRUD (create, read, update, delete) posts
 
 
 STORY 1-2
-I would like to remove the duplication in the views new & edit
+Learning about partials!  Open app/views/posts/_form.html.erb 
 
-- create a partial called app/views/posts/_form.html.erb, and put the common parts of new.html.erb & edit.html.erb there
-- replace them with a reference to the "partial"
-    <%= render :partial => "form" %>
-    
+Can you tell how it is used by new.html.erb and edit.html.erb?  Why?
+
 
 STORY 1-3
 I would like to CRUD comments

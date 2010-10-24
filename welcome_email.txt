@@ -1,11 +1,11 @@
-Congratulations on registering for the Startup Weekend Rails Bootcamp on Sunday, March 14th!
+Congratulations on registering for the Startup Weekend Rails Bootcamp on Sunday, October 31st.
 
 We said we'd send you some info about what you would need to show up with on the day of the bootcamp.  This is that info.  
 
 You will need :
 
 
-1) Ruby 1.8.6 or 1.8.7 & Rails 2.3.5 installed on your machine.
+1) Ruby 1.8.7 & Rails 3.0 installed on your machine.
 There are some pretty straightforward instructions and links here : http://rubyonrails.org/download
 
 
