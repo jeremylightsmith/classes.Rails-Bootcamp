@@ -5,12 +5,12 @@ A lot of this comes from http://guides.rubyonrails.org/getting_started.html feel
 STORY 1-1
 I would like to CRUD (create, read, update, delete) posts
 
-- generate the app w/ "rails blog"
+- generate the app w/ "rails new blog"
 - start the server :
-    script/server
+    rails server
 - remove the /public/index.html
 - generate scaffold for posts :
-    script/generate scaffold Post name:string title:string content:text
+    rails generate scaffold Post name:string title:string content:text
 - create database
     rake db:migrate
 - look at your application :
