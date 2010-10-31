@@ -1,15 +1,15 @@
-<%= image_tag @artist.photo.url %>
+<p><%= image_tag @artist.photo.url %></p>
 <h1><%= @artist.name %></h1>
 <p><%= link_to "edit", edit_artist_path(@artist) %></p>
 
 <% @albums.each do |album| %>
   <div>
-    <%= image_tag album.photo.url %>
+    <%= image_tag album.photo.url, :style => "width: 100px;" %>
     <%= link_to album.name, artist_album_path(@artist, album) %>
   </div>
 <% end %>
 
-<p><%= will_paginate @albums %></p>
+<%= will_paginate @albums %>
 
 <p><%= link_to "New Album", new_artist_album_path(@artist) %></p>
 
