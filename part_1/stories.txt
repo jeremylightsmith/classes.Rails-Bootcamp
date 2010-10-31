@@ -1,4 +1,4 @@
-Blog App
+The awesome Blog App
 
 A lot of this comes from http://guides.rubyonrails.org/getting_started.html feel free to follow along there
 
