@@ -3,13 +3,15 @@
     <%= f.label :name %>
     <%= f.text_field :name %>
   </p>
-  <p>
-    <%= f.label :photo %>
-    <%= f.file_field :photo %>
-  </p>
+  
   <p>
     <%= f.label :genre %>
     <%= f.select :genre, %w(Alternative Classical Dance Jazz R&B Rock) %>
+  </p>
+  
+  <p>
+    <%= f.label :photo %>
+    <%= f.file_field :photo %>
   </p>
   
   <p>

@@ -1,6 +1,7 @@
-ActionController::Routing::Routes.draw do |map|
-  map.root :controller => :artists
-  map.resources :artists do |artist|
-    artist.resources :albums
+Music::Application.routes.draw do
+  root :to => "artists#index"
+  
+  resources :artists do 
+    resources :albums
   end
 end

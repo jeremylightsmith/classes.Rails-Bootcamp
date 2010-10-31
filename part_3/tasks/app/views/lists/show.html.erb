@@ -1,17 +1,19 @@
 <h1><%= @list.name %></h1>
-<p><%= link_to "edit", edit_list_path(@list) %></p>
 
-
+<ul>
 <% @list.tasks.each do |task| %>
-  <div>
-    <%= link_to check_box_tag(nil), task, :method => :delete %>
-    <%= task.name %>
-  </div>
+  <li><%= link_to check_box_tag(nil), task_path(task), :method => :delete %> <%= task.name %></li>
 <% end %>
-<div>
-  <% form_for @list.tasks.build do |f| %>
-    <%= f.text_field :name %>
-    <%= f.hidden_field :list_id %>
-    <%= f.submit "Add" %>
-  <% end %>
-</div>
+  <li>
+    <% form_for @list.tasks.build do |f| %>
+      <%= f.hidden_field :list_id %>
+      <%= f.text_field :name %>
+      <%= f.submit "Add", :disable_with => 'Adding...' %>
+    <% end %>
+  </li>
+</ul>
+
+
+<p>
+  <%= link_to "back", lists_path %>
+</p>

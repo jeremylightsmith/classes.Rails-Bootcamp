@@ -15,8 +15,8 @@ Normally we would use paperclip to not just upload, but resize, but this involve
 - install the paperclip gem
     gem install paperclip
 - include the gem in your rails project
-  - in environment.rb, next to the commented out gems put this line
-      config.gem "paperclip"
+  - in Gemfile, after the commented out gems put this line
+      gem "paperclip"
   - restart your server to get this configuration changes
 - edit the models, add migrations, the _form.html.erb partials, and the show.html.erb views as described here
     http://github.com/thoughtbot/paperclip
@@ -26,13 +26,16 @@ Normally we would use paperclip to not just upload, but resize, but this involve
 STORY 4-2
 I would like to see the albums on the artist page paginated, 6 to a page.
 
-We're going to use the will_paginate gem (http://wiki.github.com/mislav/will_paginate/)
+We're going to use the will_paginate gem (http://github.com/mislav/will_paginate/wiki/Installation/)
 
 - install the will_paginate gem & include the gem in your rails project
+    gem install will_paginate --version '= 3.0.pre2'
+    and
+    gem 'will_paginate', '= 3.0.pre2'
 - in the artists controller, in index, paginate the albums
     @albums = @artist.albums.paginate :page => params[:page], :per_page => 6, :order => 'name'
 - in the view, refer to @albums instead of @artist.albums
-- add <%= will_paginate @posts %> to the view to show pagination controls
+- add <%= will_paginate @albums %> to the view to show pagination controls
 
 
 ========================================================================================
@@ -54,7 +57,7 @@ Allow the user to sort the albums associated with the artist (by name or release
 
 ========================================================================================
 At home:
-If you plan on working with rails at startup weekend, you'll want to make sure you can get these up and running.  They will take more setup than you'll have time for here, but you'll almost certainly need to do this at startup weekend.
+If you plan on working with rails at dotorg weekend, you'll want to make sure you can get these up and running.  They will take more setup than you'll have time for here, but you'll almost certainly need to do this at startup weekend.
 
 STORY 4-6
 I would like the images actually resized to a large size of 200x200 & a small size of 75x75 for both artist & albums.  Please crop the images if they are the wrong aspect ratio.
@@ -75,9 +78,9 @@ Deploy to Heroku
 STORY 4-8
 I would like to require a user to login / out of my application to see the artist page.
 
-For this story, you'll want to install a plugin.  I recommend authlogic, though there are many other choices that are equally good.
+For this story, you'll want to install a plugin.  I recommend devise, though there are many other choices that are equally good.
 
 Instructions can be found here :
-  http://github.com/binarylogic/authlogic
+  http://github.com/plataformatec/devise/wiki
 
 

@@ -3,10 +3,13 @@ Task List App
 STORY 3-1
 I would like to create a list, see all the current lists, and see one list.
 
+(if you want to cheat, generate a scaffold and delete the extra code)
+
 - create the app
 - create a list "resource" (basically a scaffold but empty)
-    script/generate resource list
+    rails generate resource list
 - add a name column to the database migration that was created
+    db/migrate
 - support actions 
     index
     new
@@ -17,6 +20,7 @@ I would like to create a list, see all the current lists, and see one list.
     new
     show
 - add a root route so http://localhost:3000/ => lists / index
+    (config/routes.rb)
 
 
 STORY 3-2
@@ -45,7 +49,7 @@ Deploy to Heroku.
 STORY 3-4
 I would like to be able to check off a task by clicking the checkbox next to it.
 
-- add a link next to each task with a checkbox in it, the link should go to DELETE /tasks/ID
+- add a link next to each task with a "[ ]" in it, the link should go to DELETE /tasks/ID
 - implement tasks/destroy
 
 
