@@ -1,0 +1,15 @@
+New quote
+
+<% form_for @quote do |f|%>
+  <p>
+    <%= f.label :author %> 
+    <%= f.text_field :author %> 
+  </p>
+  <p>
+    <%= f.label :content, "Quote" %> 
+    <%= f.text_area :content%> 
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
